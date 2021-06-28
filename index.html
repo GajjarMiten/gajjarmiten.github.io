@@ -15,31 +15,32 @@
         />
         <title>Miten Gajjar : : Web Esper</title>
         <style>
+            .loader:empty body {
+                overflow: hidden;
+            }
             .loader:empty {
                 position: absolute;
-                top: calc(50% - 4em);
-                left: calc(50% - 4em);
-                background: #0e153a;
-                width: 6em;
-                height: 6em;
-                border: 1.1em solid rgba(0, 0, 0, 0.2);
-                border-left: 1.1em solid #22D1EE;
-                border-radius: 50%;
-                animation: load8 1.1s infinite linear;
+                top: 0;
+                left: 0;
+                background: url("src/assets/logo.png") center no-repeat;
+                width: 100%;
+                height: 100%;
+                animation: load8 1.5s 1 cubic-bezier(0.19, 1, 0.22, 1);
             }
             body {
                 background: #0e153a;
             }
             @keyframes load8 {
                 0% {
-                    transform: rotate(0deg);
+                    transform: rotate(0deg) scale(0);
                 }
+
                 100% {
-                    transform: rotate(360deg);
+                    transform: rotate(360deg) scale(1);
                 }
             }
         </style>
-    <script type="module" crossorigin src="/assets/index.0291ae4f.js"></script>
+    <script type="module" crossorigin src="/assets/index.afa437e9.js"></script>
   <link rel="modulepreload" href="/assets/vendor.f6b94a45.js">
 </head>
     <body>
